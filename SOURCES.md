@@ -8,3 +8,4 @@
 | 4 | [Simon Willison](https://simonwillison.net/) | `https://simonwillison.net/atom/everything/` | Costos, tokens, herramientas de agentes |
 | 5 | [Latent Space](https://www.latent.space/) | `https://www.latent.space/feed` | Eficiencia de agentes y contexto |
 | 6 | [IndyDevDan](https://www.youtube.com/@indydevdan) (YouTube) | RSS del canal + transcripción | Context engineering, costo de agentes |
+| 7 | [NetworkChuck](https://www.youtube.com/@NetworkChuck) (YouTube) | RSS del canal + transcripción | Solo IA: modelos locales, agentes, automatización, self-hosted; sin shorts |

@@ -11,7 +11,7 @@ Asistente de investigación que lee fuentes de IA 3 veces por semana y propone *
 
 ## Contenido
 - [`TOKENS.md`](TOKENS.md): todo lo que hemos hecho para bajar tokens, con resultados medidos.
-- [`SOURCES.md`](SOURCES.md): las 6 fuentes y sus filtros.
+- [`SOURCES.md`](SOURCES.md): las 7 fuentes y sus filtros.
 - [`routine/radar.md`](routine/radar.md): instrucciones de la rutina.
 - [`skills/`](skills/): `caveman` (bot↔bot), `i-have-adhd` (bot→humano), `getting-started` (primera conversación).
 
