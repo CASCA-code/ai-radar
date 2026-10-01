@@ -12,6 +12,10 @@
 4. **Herramientas por dominio.** Cada turno carga solo los conectores del proyecto en curso, no todos.
 5. **Compuertas con reglas.** Decisiones de ruteo con reglas fijas (sí/no, score) en vez de prosa larga; un modelo solo si las reglas no alcanzan.
 
+6. **Cache-shape.** El contexto se arma con un bloque estable primero (skills, esquemas, instrucciones) y lo que cambia al final (fecha, estado de la tarea), para aprovechar el caché de entrada, que cuesta ~95% menos.
+7. **Notas de implementación.** En tareas de esfuerzo alto, el ejecutor cierra con 3 a 5 líneas de qué alternativas vio y por qué las descartó, para evitar retrabajo.
+8. **Presupuesto de 1 reintento.** Si la autoverificación falla una vez, el ejecutor escala al orquestador con lo que falta; no rehace en bucle.
+
 ## 3. Herramientas y fuentes
 1. **Conector/API/CLI primero; navegador al último.** El navegador y el escritorio cuestan muchísimo más. Capturas de pantalla solo en puntos de decisión o como prueba, nunca por paso.
 2. **YouTube por RSS + transcripción**, nunca viendo el video en navegador.
