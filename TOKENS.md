@@ -16,6 +16,17 @@
 7. **Notas de implementación.** En tareas de esfuerzo alto, el ejecutor cierra con 3 a 5 líneas de qué alternativas vio y por qué las descartó, para evitar retrabajo.
 8. **Presupuesto de 1 reintento.** Si la autoverificación falla una vez, el ejecutor escala al orquestador con lo que falta; no rehace en bucle.
 
+9. **Tope de acciones por rutina.** Cada rutina dice "tope N tool calls por turno; si excede, reporta y para".
+10. **Escalera de esfuerzo.** Toda tarea arranca en esfuerzo bajo; sube a alto solo si la verificación falla, y a un trabajador más potente solo si vuelve a fallar.
+11. **Re-anclar el pedido.** Antes de la respuesta final, el bot vuelve a leer el pedido original si las herramientas llenaron el contexto.
+12. **Relevo a ~20 turnos.** Pasados ~20 turnos, se resume y la tarea sigue en un ayudante nuevo con un brief corto.
+13. **Entregables en su lugar.** El resultado se guarda donde se usa y se pasa la ruta, no el contenido completo.
+
+## 2b. Memoria y organización
+1. **Índice por proyecto.** Cada proyecto tiene un `INDEX.md` de una página; los bots lo leen antes de abrir documentos completos.
+2. **Limpieza mensual de memoria.** Una vez al mes se borran duplicados y se juntan datos repetidos.
+3. **Error repetido 2 veces = regla fija.** Si un bot comete el mismo error dos veces, se guarda como regla permanente en su perfil.
+
 ## 3. Herramientas y fuentes
 1. **Conector/API/CLI primero; navegador al último.** El navegador y el escritorio cuestan muchísimo más. Capturas de pantalla solo en puntos de decisión o como prueba, nunca por paso.
 2. **YouTube por RSS + transcripción**, nunca viendo el video en navegador.
