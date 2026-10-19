@@ -19,8 +19,9 @@
 9. **Tope de acciones por rutina.** Cada rutina dice "tope N tool calls por turno; si excede, reporta y para".
 10. **Escalera de esfuerzo.** Toda tarea arranca en esfuerzo bajo; sube a alto solo si la verificación falla, y a un trabajador más potente solo si vuelve a fallar.
 11. **Re-anclar el pedido.** Antes de la respuesta final, el bot vuelve a leer el pedido original si las herramientas llenaron el contexto.
-12. **Relevo a ~20 turnos.** Pasados ~20 turnos, se resume y la tarea sigue en un ayudante nuevo con un brief corto.
+12. **Relevo a ~20 turnos.** Pasados ~20 turnos, se resume y la tarea sigue en un ayudante nuevo con un brief corto. El relevo usa 3 bloques ([CarryOn](https://ethannju.github.io/carryon/)): **carriers** (rutas a archivos/artefactos y cuándo sirven, no su contenido), **contexto de ejecución** (metas, restricciones, pendientes abiertos) y **cola viva** (pasos desde el último relevo). Se actualiza por partes, sin rehacer todo. En el paper: −52% tokens y −36% costo por tarea con más aciertos.
 13. **Entregables en su lugar.** El resultado se guarda donde se usa y se pasa la ruta, no el contenido completo.
+14. **Código a editar, sin comprimir.** Para editar código se cargan 2-3 archivos enteros tal cual más fragmentos de `grep`; nunca markitdown, headroom ni otra compresión, porque alteran el texto y los parches no aplican. Para elegir archivos se pregunta 2 veces cuáles cambian y se quedan los que coinciden ([Skip the Compressor](https://arxiv.org/abs/2610.21073): +6.3 pts vs el mejor compresor).
 
 ## 2b. Memoria y organización
 1. **Índice por proyecto.** Cada proyecto tiene un `INDEX.md` de una página; los bots lo leen antes de abrir documentos completos.
