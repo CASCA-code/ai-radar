@@ -26,7 +26,7 @@
 ## 2b. Memoria y organización
 1. **Índice por proyecto.** Cada proyecto tiene un `INDEX.md` de una página; los bots lo leen antes de abrir documentos completos.
 2. **Limpieza mensual de memoria.** Una vez al mes se borran duplicados y se juntan datos repetidos.
-3. **Error repetido 2 veces = regla fija.** Si un bot comete el mismo error dos veces, se guarda como regla permanente en su perfil.
+3. **Error repetido 2 veces = regla fija.** Si un bot comete el mismo error dos veces, se guarda como regla permanente en su perfil. Cada regla guarda su fuente (fecha, caso y evidencia). En la limpieza mensual se vuelve a revisar; si el caso ya no aplica, se propone borrarla y se borra solo con OK del humano ([Anti-Persistence](https://arxiv.org/abs/2610.27406): las reglas guardadas pueden repetir sus propios errores).
 
 ## 3. Herramientas y fuentes
 1. **Conector/API/CLI primero; navegador al último.** El navegador y el escritorio cuestan muchísimo más. Capturas de pantalla solo en puntos de decisión o como prueba, nunca por paso.
