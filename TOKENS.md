@@ -53,3 +53,5 @@ Regla resultante: markitdown solo para YouTube/Office; PDFs con `pdftotext`; hea
 - **Context Mode**: si recorta un detalle necesario, se re-pide todo y sale más caro.
 - **Memorias externas (AgentMemory, GBrain, etc.)**: solo como ideas si ya tienes memoria integrada.
 - **RTK** (comprime output de terminal): útil solo para bots que corren muchos comandos.
+- **Hook anti-fuga de email en headers** (2026-10-26): la plataforma no tiene hooks pre-tool propios; si hace falta, va como regla de Auto-review.
+- **Catálogo de skills filtrado por bot** (2026-10-26): las skills son una librería global compartida; no se puede limitar por bot.
